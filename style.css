@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 100px;
+  background-color: #fff;
+  -webkit-box-shadow: 8px 8px 24px -18px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 8px 8px 24px -18px rgba(66, 68, 90, 1);
+  box-shadow: 8px 8px 24px -18px rgba(66, 68, 90, 1);
+  border-radius: 8%;
+}
+
+/* left */
+.left {
+  flex: 1;
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  padding: 1rem 2rem;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 8%;
+}
+
+.left h3 {
+  font-size: 1.2rem;
+  color: hsl(241, 100%, 89%);
+  padding: 1.5rem 0;
+}
+
+.left .circle-score {
+  background: linear-gradient(hsl(241, 85%, 53%), hsl(252, 72%, 55%));
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.left .circle-score h1 {
+  font-size: 3.5rem;
+}
+
+.left .circle-score p {
+  color: hsl(253, 22%, 66%);
+}
+
+.left h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.left .p-gray {
+  color: hsl(241, 100%, 89%);
+  margin-bottom: 1.6rem;
+}
+
+/* right */
+.right {
+  flex: 1;
+  padding: 2rem;
+  border-radius: 8%;
+}
+
+.right h3 {
+  font-size: 1.3rem;
+}
+
+.components {
+  padding: 1rem 0 2rem 0;
+}
+
+.component {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.component > div {
+  display: flex;
+  flex-direction: row;
+}
+
+.component .comp-name {
+  margin-left: .4rem;
+}
+
+.btn {
+  color: #fff;
+  text-decoration: none;
+  background: hsl(224, 30%, 27%);
+  padding: 1rem 2rem;
+  width: 100%;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn:active {
+  cursor: pointer;
+  transform: scale(.97);
+}
+
+/* Components colors */
+.red {
+  color: hsl(0, 100%, 67%);
+  background: hsla(0, 100%, 67%, .05);
+}
+
+.yellow {
+  color: hsl(39, 100%, 56%);
+  background: hsl(39, 100%, 56%, .05);
+}
+
+.green {
+  color: hsl(166, 100%, 37%);
+  background: hsla(166, 100%, 37%, .05);
+}
+
+.purple {
+  color: hsl(234, 85%, 45%);
+  background: hsla(234, 85%, 45%, .05);
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.gray {
+  color: hsl(253, 22%, 66%);
+}
+
+/* media queries */
+@media(max-width: 628px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+}
